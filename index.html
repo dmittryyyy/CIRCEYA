@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Roboto&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
 
@@ -23,57 +24,92 @@
                 <div class="header__logo">
                     <img src="images/header_logo.svg" alt="Логотип">
                 </div>
-                <div class="header__number">+7 (495) 495-49-54</div>
+                <a href="tel:74954954954" class="header__number">+7 (495) 495-49-54</a>
             </div>
         </header>
 
+        <nav class="nav">
+            <div class="nav__container">
+                <ul class="tabs__items">
+                    <a href="#">
+                        <li class="tab__item">lorem</li>
+                    </a>
+                    <a href="">
+                        <li class="tab__item">ipsum</li>
+                    </a>
+                </ul>
+        </nav>
+
         <main class="main">
             <div class="main__container">
-                <nav class="main-nav">
-                    <ul class="nav__items">
-                        <a href="#">
-                            <li class="nav__item">lorem</li>
-                        </a>
-                        <a href="">
-                            <li class="nav__item">ipsum</li>
-                        </a>
-                    </ul>
-                </nav>
 
-                <section class="main-content">
-                    <h1 class="main__title">Lorem ipsum dolor <span>sit</span> amet</h1>
-                    <div class="main__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                    <div class="main-text">Incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Ut&nbsp;enim
-                        ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat. Duis aute irure dolor
-                        in&nbsp;reprehenderit in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in&nbsp;culpa qui officia deserunt mollit
-                        anim id&nbsp;est laborum/ Incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.
-                        Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo consequat. Duis aute irure dolor in&nbsp;reprehenderit
-                        in&nbsp;
-                        voluptate velit esse cillum dolore eu&nbsp;fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat.
+                <h1 class="main__title">Lorem ipsum dolor <span>sit</span> amet</h1>
+
+                <section class="main-top">
+                    <div class="text-content">
+                        <h2 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                        <p class="text">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum/ Incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat.</p>
                     </div>
-                    <div class="main__photo">
+                    <div class="main-top__photo">
                         <img src="images/main/main_arms.png" alt="Фото">
                     </div>
-            </div>
-            <div class="main__content-bottom">
-                <div class="main__photo">
-                    <img src="images/main/main_face.png" alt="Фото">
-                </div>
-            </div>
-            <div class="main__sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-            <div class="main-text">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum
-            </div>
-            </section>
+                </section>
+
+                <section class="main-bottom">
+                    <div class="main-bottom__photo">
+                        <img src="images/main/main_face.png" alt="Фото">
+                    </div>
+                    <div class="text-content">
+                        <h2 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                        <p class="text">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum</p>
+                    </div>
+                </section>
+
+                <section class="slider">
+                    <div class="slider__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="slide__item swiper-slide">
+                                <img data-id="1" src="images/main-slider/slider1.png" alt="фото">
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-id="2" class="swiper-slide__img" src="images/main-slider/slider2.png" alt="фото">
+                                <div class="slider__card-text_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-id="3" class="swiper-slide__img" src="images/main-slider/slider3.png" alt="фото">
+                                <div class="slider__card-text_5">Lorem ipsum dolor sit amet</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-id="4" class="swiper-slide__img" src="images/main-slider/slider4.png" alt="фото">
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-id="5" class="swiper-slide__img" src="images/main-slider/slider5.png" alt="фото">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-next">PREV</div>
+                    <div class="button-prev">NEXT</div>
+                </section>
         </main>
+
+        
+
+
+
 
         <footer class="footer">
             <div class="footer__container">
@@ -84,6 +120,7 @@
 
 
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
