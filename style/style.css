@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: 'Orchidea Pro';
+    font-size: 16px;
+    color: #4D533C;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: "OrchideaProMedium";
+    src: url("../style/fonts/OrchideaProMedium.ttf");
+    src: url("../style/fonts/OrchideaProMediumItalic.ttf");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+/* ====================================================================== */
+/* HEADER */
+.header {
+    background: linear-gradient(0deg, #464341 0%, #010101 100%);
+    margin: 0;
+    margin-bottom: 28px;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0px 29px 0px;
+}
+
+.header__logo {
+
+}
+
+.header__logo span {
+    color: #ffffff;
+}
+
+.header__number {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
+}
+/* ====================================================================== */
+
+/* MAIN */
+
+.main {
+}
+.main__container {
+}
+.main-nav {
+    margin: 50px 0px;
+}
+.nav__items {
+    display: flex;
+}
+.nav__item {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #141414; 
+    padding: 0px 45px 0px 0px;
+    transition: 0.5s ease;
+}
+
+.nav__item:hover {
+    text-decoration: underline;
+}
+
+.main__title {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 110%;
+    align-items: center;
+    text-transform: uppercase;
+    color: #141414;
+    margin-bottom: 70px;
+}
+.main__title span {
+    text-transform: lowercase;
+}
+.main__content-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__sub-title {
+    max-width: 600px;
+    min-height: 160px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 110%;
+    align-items: center;
+    color: #141414;
+    padding-bottom: 25px;
+    align-items: center;
+}
+.main-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #141414;
+    padding-top: 25px;
+}
+.main__photo {
+    width: 100%;
+}
+/* ====================================================================== */
+
+/* FOOTER */
+
+.footer {
+    background: #141414;
+    text-align: center;
+}
+.footer__container {
+
+}
+.footer__copyright {
+    padding: 150px 0px 18px 0px;
+}
