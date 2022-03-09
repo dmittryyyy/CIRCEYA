@@ -1,35 +1,72 @@
-const mainfunc = () => {
+window.addEventListener("DOMContentLoaded", () => {
 
-  const swiper = new Swiper('.swiper', {
+  // tabs
+  const tabIpsum = document.querySelector('.tab-ipsum'),
+    tabLorem = document.querySelector('.tab-lorem'),
+    mainLorem = document.querySelector('.main__lorem'),
+    mainIpsum = document.querySelector('.main__ipsum');
+
+  tabIpsum.addEventListener('click', () => {
+    mainLorem.style.display = 'none';
+    mainIpsum.style.display = 'block';
+    tabIpsum.style.textDecoration = 'underline';
+    tabLorem.style.textDecoration = 'none'
+
+  });
+
+  tabLorem.addEventListener('click', () => {
+    mainLorem.style.display = 'block';
+    mainIpsum.style.display = 'none';
+    tabLorem.style.textDecoration = 'underline';
+    tabIpsum.style.textDecoration = 'none';
+  });
+
+  // slider
+  var swiper = new Swiper(".swiper", {
     slidesPerView: 5,
+    spaceBetween: 26,
     loop: true,
-    speed: 900,
-    spaceBetween: 70,
     centeredSlides: true,
-    slideToClickedSlide: true,
-    toggle: true,
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
+    navigation: {
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
     },
     breakpoints: {
-      320: {
-        direction: 'vertical',
-        slidesPerView: 3,
-        mousewheel: true,
-        loop: true,
-        spaceBetween: 110,
-      },
-      891: {
+      768: {
         slidesPerView: 2,
-        spaceBetween: 40
+        spaceBetween: 20,
       },
-      1200: {
+      1100: {
         slidesPerView: 3,
-        spaceBetween: 70
-      }
-    }
+        spaceBetween: 20,
+      },
+      1220: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1320: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    },
   });
-};
-  mainfunc();
 
+  const modal = document.querySelector('.modal'),
+    img = document.querySelectorAll('.slider-img'),
+    modalImg = document.querySelector(".modal__content");
+
+  img.forEach(item => {
+    item.addEventListener('click', () => {
+      modal.style.display = "block";
+      modalImg.src = item.src;
+    });
+  });
+
+  
+
+  closeModal = document.querySelector('.close__modal');
+  closeModal.onclick = function () {
+    modal.style.display = 'none';
+  };
+
+}); 

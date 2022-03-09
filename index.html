@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Roboto&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css">
 
     <title>CIRCEYA</title>
@@ -31,16 +30,16 @@
         <nav class="nav">
             <div class="nav__container">
                 <ul class="tabs__items">
-                    <a href="#">
-                        <li class="tab__item">lorem</li>
+                    <a href="#" class="tab-link">
+                        <li class="tab__item tab-lorem">lorem</li>
                     </a>
-                    <a href="">
-                        <li class="tab__item">ipsum</li>
+                    <a href="#" class="tab-link">
+                        <li class="tab__item tab-ipsum">ipsum</li>
                     </a>
                 </ul>
         </nav>
 
-        <main class="main">
+        <main class="main__lorem">
             <div class="main__container">
 
                 <h1 class="main__title">Lorem ipsum dolor <span>sit</span> amet</h1>
@@ -78,37 +77,54 @@
                             anim id est laborum</p>
                     </div>
                 </section>
-
-                <section class="slider">
-                    <div class="slider__swiper swiper">
-                        <div class="swiper-wrapper">
-                            <div class="slide__item swiper-slide">
-                                <img data-id="1" src="images/main-slider/slider1.png" alt="фото">
-                            </div>
-                            <div class="swiper-slide">
-                                <img data-id="2" class="swiper-slide__img" src="images/main-slider/slider2.png" alt="фото">
-                                <div class="slider__card-text_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img data-id="3" class="swiper-slide__img" src="images/main-slider/slider3.png" alt="фото">
-                                <div class="slider__card-text_5">Lorem ipsum dolor sit amet</div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img data-id="4" class="swiper-slide__img" src="images/main-slider/slider4.png" alt="фото">
-                            </div>
-                            <div class="swiper-slide">
-                                <img data-id="5" class="swiper-slide__img" src="images/main-slider/slider5.png" alt="фото">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button-next">PREV</div>
-                    <div class="button-prev">NEXT</div>
-                </section>
         </main>
 
-        
-
-
+        <main class="main__ipsum">
+            <h1 class="main__title title__ipsum">Lorem ipsum dolor <span>sit</span> amet</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slider__card">
+                            <img src="images/main-slider/slider1.png" alt="фото" class="slider-img">
+                        </div>
+                        <div class="swiper-slide slider__card">
+                            <img src="images/main-slider/slider2.png" alt="фото" class="slider-img">
+                        </div>
+                        <div class="swiper-slide slider__card">
+                            <img src="images/main-slider/slider3.png" alt="фото" class="slider-img">
+                            <p class="text-card_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="swiper-slide slider__card">
+                            <img src="images/main-slider/slider4.png" alt="фото" class="slider-img">
+                        </div>
+                        <div class="swiper-slide slider__card">
+                            <img src="images/main-slider/slider5.png" alt="фото" class="slider-img">
+                            <p class="text-card_2">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <span class="close__modal">&times;</span>
+                <img class="modal__content" src="" id="modal__content">
+                <div class="buttons-modal">
+                    <div class="button-prev">
+                        <img src="images/main-slider/prev_ico.svg" alt="стрелка назад">
+                    </div>
+                    <div class="button-next">
+                        <img src="images/main-slider/next-ico.svg" alt="стрелка далее">
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-slider">
+                <div class="button-prev">
+                    <img src="images/main-slider/prev_ico.svg" alt="стрелка назад">
+                </div>
+                <div class="button-next">
+                    <img src="images/main-slider/next-ico.svg" alt="стрелка далее">
+                </div>
+            </div>
+        </main>
 
 
         <footer class="footer">
@@ -120,7 +136,8 @@
 
 
     </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
