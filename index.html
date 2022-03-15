@@ -31,15 +31,18 @@
             <div class="nav__container">
                 <ul class="tabs__items">
                     <a href="#" class="tab-link">
-                        <li class="tab__item tab-lorem">lorem</li>
+                        <li class="tab__item tab-lorem item_active">lorem</li>
                     </a>
                     <a href="#" class="tab-link">
                         <li class="tab__item tab-ipsum">ipsum</li>
                     </a>
+                    <a href="../Circeya/next-page.html" class="tab-link">
+                        <li class="tab__item tab-ipsum">next page</li>
+                    </a>
                 </ul>
         </nav>
 
-        <main class="main__lorem">
+        <main class="main__lorem main-item">
             <div class="main__container">
 
                 <h1 class="main__title">Lorem ipsum dolor <span>sit</span> amet</h1>
@@ -79,7 +82,7 @@
                 </section>
         </main>
 
-        <main class="main__ipsum">
+        <main class="main__ipsum main-item">
             <h1 class="main__title title__ipsum">Lorem ipsum dolor <span>sit</span> amet</h1>
             <div class="swiper-wrapper">
                 <div class="swiper">
@@ -106,16 +109,15 @@
             </div>
             <div class="modal">
                 <span class="close__modal">&times;</span>
-                <img class="modal__content" src="" id="modal__content">
-                <div class="buttons-modal">
-                    <div class="button-prev">
-                        <img src="images/main-slider/prev_ico.svg" alt="стрелка назад">
-                    </div>
-                    <div class="button-next">
-                        <img src="images/main-slider/next-ico.svg" alt="стрелка далее">
+                <div class="modal__content">
+                    <img class="modal__photo" src="">
+                    <div class="modal-buttons">
+                        <button class="modal__button-prev"></button>
+                        <button class="modal__button-next"></button>
                     </div>
                 </div>
             </div>
+
             <div class="buttons-slider">
                 <div class="button-prev">
                     <img src="images/main-slider/prev_ico.svg" alt="стрелка назад">
