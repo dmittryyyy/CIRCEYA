@@ -441,12 +441,13 @@ main {
 @media (max-width: 1024.98px) {
     .modal__photo {
         width: 80%;
-        max-height: 650px;
+        max-height: 550px;
     }
 }
 @media (max-width: 768.98px) {
     .modal__photo {
-        max-height: 550px;
+        width: 70%;
+        max-height: 400px;
     }
 }
 
